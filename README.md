@@ -16,3 +16,9 @@ demonstrate : spring-security - mysql-connectors - spring web mvc.
 Right click on the **/newcomeratcognizant** project : Run As -> Run On Server.
 
 You can debug this example and see what happens after every step. Enjoy!
+
+
+## Project Demo
+Hit the following application url on your favorite browser and you will see the login page.
+
+http://localhost:8080/hr-newcomer-managment/
