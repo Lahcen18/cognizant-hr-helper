@@ -1,0 +1,11 @@
+/target/
+/etc/
+/tmp/
+/dist/
+/build/
+.classpath
+.settings
+.gradle
+*.orig
+
+	
