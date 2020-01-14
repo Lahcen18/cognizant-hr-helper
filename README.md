@@ -8,5 +8,5 @@ this file holds all DB properties
 
 ### custom mysql database table ( the MySQLWorkBench app is neded to do this):
 #### use the script ( the MySQLWorkBench app is neded to do this):
-/newcomeratcognizant/sql-scripts/newcomer_database.sql
-to creatye a newcomers table
+##### /newcomeratcognizant/sql-scripts/newcomer_database.sql
+to create a newcomers database table
