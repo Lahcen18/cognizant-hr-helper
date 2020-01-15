@@ -17,6 +17,7 @@ import com.cognizant.springsecurity.demo.user.CrmUser;
 
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
@@ -37,6 +38,12 @@ public class UserServiceImpl implements UserService {
 	public User findByUserName(String userName) {
 		// check the database if the user already exists
 		return userDao.findByUserName(userName);
+	}
+
+	@Override
+	@Transactional
+	public List<User> findAll() {
+		return userDao.findAll();
 	}
 
 	@Override
