@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 
 <head>
 	<meta charset="UTF-8"/>
@@ -9,19 +8,22 @@
 <body>
 <h1>User List</h1>
 
+
 <table>
 	<tr>
 		<th>ID</th>
 		<th>First Name</th>
 		<th>Last Name</th>
 	</tr>
-	<tr th:each="user : ${users}">
-		<td th:text="${user.id}">123</td>
-		<td th:text="${user.firstName}">Momo</td>
-		<td th:text="${user.lastName}">Hassan</td>
+	<c:forEach items="${users}" var="user">
+	<tr>
+        	<th>${user.id}</th>
+        	<th>${user.firstName}</th>
+        	<th>${user.lastName}</th>
 	</tr>
+	</c:forEach>
 </table>
-<br>
+
 <p> my data : ${myData}</p>
 
 </body>
